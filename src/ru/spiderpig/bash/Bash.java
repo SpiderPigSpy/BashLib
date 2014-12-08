@@ -18,4 +18,20 @@ public class Bash {
         return Downloader.getFromUrl(INDEX_URL);
     }
     
+    public static List<QuoteInterface> sortByDateDesc(List<QuoteInterface> initial) {
+        return Utils.sortByDate(initial, true);
+    }
+    
+    public static List<QuoteInterface> sortByDateAsc(List<QuoteInterface> initial) {
+        return Utils.sortByDate(initial, false);
+    }
+    
+    public static List<QuoteInterface> sortByRatingDesc(List<QuoteInterface> initial) {
+        return Utils.sortByDate(initial, true);
+    }
+    
+    public static List<QuoteInterface> sortByRatingAsc(List<QuoteInterface> initial) {
+        return Utils.sortByRating(initial, false);
+    }
+    
 }
