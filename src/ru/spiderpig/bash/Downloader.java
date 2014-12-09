@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
  *
  * @author Alex
  */
-public class Downloader {
+class Downloader {
     
     private static final Logger LOG = Logger.getLogger(Downloader.class.getName());
     

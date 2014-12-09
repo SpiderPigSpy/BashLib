@@ -6,7 +6,7 @@ import java.util.Date;
  *
  * @author Alex
  */
-public class QuoteImpl implements QuoteInterface {
+class QuoteImpl implements QuoteInterface {
     
     private final String quote;
     private final int rating;
