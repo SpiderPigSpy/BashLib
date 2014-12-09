@@ -41,7 +41,7 @@ public class BashTest {
     
     @Test 
     public void haveDates() {
-        boolean haveDates = true;
+        boolean haveDates = !testList.isEmpty();
         for (QuoteInterface quote : testList) {
             if (quote.getDate().getTime() == 0) {
                 haveDates = false;
@@ -52,7 +52,7 @@ public class BashTest {
     
     @Test 
     public void haveRatings() {
-        boolean haveRatings = true;
+        boolean haveRatings = !testList.isEmpty();
         for (QuoteInterface quote : testList) {
             if (quote.getRating() == 0) {
                 haveRatings = false;
@@ -63,7 +63,7 @@ public class BashTest {
     
     @Test 
     public void haveTexts() {
-        boolean haveTexts = true;
+        boolean haveTexts = !testList.isEmpty();
         for (QuoteInterface quote : testList) {
             if (quote.getText().trim().isEmpty()) {
                 haveTexts = false;
