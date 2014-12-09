@@ -24,19 +24,13 @@ class Downloader {
     private final static String CLASS_TEXT = "text";
     private final static String CLASS_DATE = "date";
     
-    public static List<QuoteInterface> getFromUrl(String url) {
+    public static List<QuoteInterface> getFromUrl(String url) throws Exception {
         Document doc = getDoc(url);
         return getFromDoc(doc);
     }
     
-    private static Document getDoc(String url) {
-        Document doc;
-        try {
-            doc = Jsoup.connect(url).timeout(10000).userAgent("Mozilla/17.0").get();
-        } catch (IOException ex) {
-            LOG.log(Level.SEVERE, null, ex);
-            return null;
-        }
+    private static Document getDoc(String url) throws IOException {
+        Document doc = Jsoup.connect(url).timeout(10000).userAgent("Mozilla/17.0").get();
         return doc;
     }
     

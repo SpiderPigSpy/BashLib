@@ -14,7 +14,7 @@ public class Bash {
     
     public Bash() {}
     
-    public List<QuoteInterface> getIndexQuotes() {
+    public List<QuoteInterface> getIndexQuotes() throws Exception {
         return Downloader.getFromUrl(INDEX_URL);
     }
     
