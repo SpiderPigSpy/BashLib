@@ -1,4 +1,4 @@
-package ru.spiderpig.bash;
+package ru.spiderpig.bashlib;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ class Downloader {
     }
     
     private static List<QuoteInterface> getFromDoc(Document doc) {
-        List<QuoteInterface> result = new ArrayList<>();
+        List<QuoteInterface> result = new ArrayList<QuoteInterface>();
         if (doc==null) return result;
         Elements quotes = doc.getElementsByClass("quote");
         

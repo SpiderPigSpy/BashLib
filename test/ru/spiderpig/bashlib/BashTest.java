@@ -1,4 +1,4 @@
-package ru.spiderpig.bash;
+package ru.spiderpig.bashlib;
 
 import java.util.List;
 import org.junit.After;
